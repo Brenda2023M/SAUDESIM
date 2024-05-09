@@ -1,5 +1,6 @@
 import React, {useState } from "react";
 import { View, Text, TextInput, Button} from "react-native";
+import ResultImc from "./ResultImc";
 
 export default function Form(){
 
@@ -44,6 +45,9 @@ export default function Form(){
           title={textButton}
           />
             </View>
+                <ResultImc messageResultImc={messageImc} 
+                ResultImc={imc}/>
+                
         </View>
     );
 }
